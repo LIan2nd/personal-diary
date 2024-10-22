@@ -86,7 +86,7 @@ function getDiaries() {
             <img src="static/img/profile/${diary.profileImg || 'default.jpg'}" class="rounded-circle mb-3" alt="My Profile Picture" id="profile-img"/>
               <h5 class="card-title">${diary.title}</h5>
               <p class="card-text">${diary.description}.</p>
-              <p class="card-text"><small class="text-body-secondary">${diary.time} || ??-??-????</small></p>
+              <p class="card-text"><small class="text-body-secondary">${diary.time || "??-??-????"}</small></p>
             </div>
           </div>
         </div>
