@@ -1,0 +1,97 @@
+:root {
+  --bg-color: #DFF2EB;
+  --form-bg-color: #B9E5E8;
+  --primary-color: #4A628A;
+  --hover-primary-color: #7AB2D3;
+  --border-radius: 7px;
+  --text-light: #fff;
+  --text-dark: #000;
+}
+
+#alert-success {
+  display: none;
+}
+
+#form {
+  border-radius: var(--border-radius);
+  background-color: var(--form-bg-color);
+}
+
+.my-bg-color {
+  background-color: var(--bg-color);
+}
+
+.my-btn {
+  border: none;
+  padding: 10px 5px;
+  width: 150px;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+  transition: all ease-in-out .17s;
+}
+
+.my-btn:hover {
+  background-color: var(--hover-primary-color);
+}
+
+.btn-loading {
+  display: none;
+}
+
+.btn-loading:hover {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.card>img {
+  height: 250px;
+  object-fit: cover;
+}
+
+#profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+form .form-floating>.form-control:focus,
+form .custom-file>.form-control:focus {
+  border: 1px solid var(--primary-color);
+
+  outline: none !important;
+
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+form .custom-file>.form-control {
+  height: 60px;
+  padding: 16px;
+}
+
+.custom-file input[type=file] {
+  margin-left: -2px !important;
+}
+
+.custom-file input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+.custom-file input[type=file]::file-selector-button {
+  display: none;
+}
+
+.custom-file label {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  transition: all ease-in-out .17s;
+}
+
+.custom-file:hover label {
+  background-color: var(--hover-primary-color);
+  cursor: pointer;
+}
