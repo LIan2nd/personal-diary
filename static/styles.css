@@ -13,7 +13,7 @@
 }
 
 #form {
-  border-radius: var(--border-radius);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
   background-color: var(--form-bg-color);
 }
 
