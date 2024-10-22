@@ -38,7 +38,7 @@ def postDiary() :
   profileImg = request.files.get("profileImg")
 
   now = datetime.now()
-  time = now.strftime("%d-%m-%Y-%H-%M-%S")[:10]
+  time = now.strftime("%d-%m-%Y")
 
   if diaryImg : 
     extensionDiaryImg = diaryImg.filename.split('.')[-1]
