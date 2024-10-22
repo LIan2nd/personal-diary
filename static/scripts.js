@@ -1,18 +1,21 @@
 $(document).ready(() => {
   getDiaries();
   bsCustomFileInput.init();
-  const myTooltip = $('.tt')
-  const tooltip = new bootstrap.Tooltip(myTooltip)
 });
+
 const diary = $("#input-diary-img")
 const profile = $("#input-profile-img")
-new bootstrap.Tooltip(diary)
-new bootstrap.Tooltip(profile)
+const titleInput = $("#title");
+const descriptionInput = $("#description");
+new bootstrap.Tooltip(diary);
+new bootstrap.Tooltip(profile);
+new bootstrap.Tooltip(titleInput);
+new bootstrap.Tooltip(descriptionInput);
 
 function postDiary() {
 
-  const title = $('#title').val();
-  const description = $('#description').val();
+  const title = titleInput.val();
+  const description = descriptionInput.val();
   let diaryImg = diary.prop("files")[0];
   let profileImg = profile.prop("files")[0];
   const btnSave = $('#btn-save');
@@ -75,7 +78,7 @@ function getDiaries() {
         diaries.forEach(diary => {
           const temp_html = `
           <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-3">
+          <div class="card mb-3 shadow-sm">
             <img
               src="static/img/diary/${diary.diaryImg || "default.jpg"}"
               class="card-img-top" alt="${diary.title}">

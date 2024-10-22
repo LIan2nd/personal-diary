@@ -27,8 +27,8 @@
 <body class="my-bg-color">
 
   <div class="container">
-    <div class="p-5 mb-3" id="form">
-      <div class="container-fluid form-bg-color py-5">
+    <div class="p-5 mb-5 shadow" id="form">
+      <div class="container-fluid form-bg-color py-3">
         <h1 class="display-3 fw-bold mb-4">Personal Diary</h1>
         <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-success">
         </div>
@@ -44,12 +44,14 @@
               data-bs-placement="top" data-bs-title="here your profile image">
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+            <input type="text" class="form-control" id="title" placeholder="Title" name="title" data-bs-toggle="tooltip"
+              data-bs-placement="top" data-bs-title="here your diary title">
             <label for="title">Title</label>
           </div>
           <div class="form-floating mb-3">
             <textarea class="form-control" placeholder="Leave a comment here" id="description" style="height: 120px"
-              name="description"></textarea>
+              name="description" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-title="here your diary description"></textarea>
             <label for="description">Description</label>
           </div>
           <button type="button" onclick="postDiary()" class="my-btn" id="btn-save">Save</button>
